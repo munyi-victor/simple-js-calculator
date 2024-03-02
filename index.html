@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Calculator</h1>
   <div class="calculator">
-    <input type="text" id="display" readonly/>
+    <input type="text" id="display" readonly />
 
     <div class="buttons">
-      <button onclick="clearDisplay()" style="background-color: red; color: white; border: none;">C</button>
-      <button onclick="deleteNum()"><</button>
+      <button onclick="clearDisplay()" style="background-color: red;">C</button>
+      <button onclick="deleteNum()" style="background-color: red;">DEL</button>
       <button onclick="toDisplay('/')">/</button>
       <button onclick="toDisplay('*')">*</button>
       <button onclick="toDisplay('-')">-</button>
@@ -29,7 +30,7 @@
       <button onclick="toDisplay('3')">3</button>
       <button onclick="toDisplay('.')">.</button>
       <button onclick="toDisplay('0')">0</button>
-      <button onclick="calculate()" style="background-color: darkgreen; color: white; border: none;">=</button>
+      <button onclick="calculate()" style="background-color: darkgreen;">=</button>
     </div>
   </div>
 
