@@ -3,7 +3,7 @@ let display = document.getElementById("display");
 let answerDisplayed = false;
 
 function toDisplay(value) {
-  if (answerDisplayed && "1234567890".includes(value)) {
+  if (answerDisplayed) {
     display.value = "";
     answerDisplayed = false;
   }
@@ -21,6 +21,7 @@ function calculate() {
     answerDisplayed = true;
   } catch (error) {
     display.value = error;
+    answerDisplayed = true;
   }
 }
 
